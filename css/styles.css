@@ -492,6 +492,18 @@ body.dark-theme .tag {
 }
 
 /* Estilos específicos para imágenes de proyectos */
+.project-emoji-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-color) 100%);
+}
+
+.project-emoji {
+    font-size: 5rem;
+    line-height: 1;
+}
+
 .project-image-game-1 {
     background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
 }
