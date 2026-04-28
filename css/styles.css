@@ -74,6 +74,21 @@ body {
     cursor: pointer;
 }
 
+.nav-brand-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-brand-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(108, 92, 231, 0.3);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -474,6 +489,27 @@ body.dark-theme .tag {
 
 .link-btn:hover {
     background-color: var(--accent-color);
+}
+
+/* Estilos específicos para imágenes de proyectos */
+.project-image-game-1 {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
+}
+
+.project-image-game-2 {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+}
+
+.project-image-1 {
+    background: linear-gradient(135deg, #FA8072 0%, #FF69B4 100%);
+}
+
+.project-image-2 {
+    background: linear-gradient(135deg, #87CEEB 0%, #E0FFFF 100%);
+}
+
+.project-image-3 {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
 }
 
 /* Contact Section */
