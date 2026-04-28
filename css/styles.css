@@ -499,29 +499,52 @@ body.dark-theme .tag {
     background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-color) 100%);
 }
 
+.project-emoji-academic {
+    background: linear-gradient(135deg, #f4f1ff 0%, #e8f9ff 100%);
+}
+
+body.dark-theme .project-emoji-academic {
+    background: linear-gradient(135deg, #2a2440 0%, #1d2f45 100%);
+}
+
 .project-emoji {
     font-size: 5rem;
     line-height: 1;
 }
 
-.project-image-game-1 {
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%);
+/* Journey Section */
+.journey {
+    background-color: var(--bg-primary);
 }
 
-.project-image-game-2 {
-    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+.journey-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
 }
 
-.project-image-1 {
-    background: linear-gradient(135deg, #FA8072 0%, #FF69B4 100%);
+.journey-card {
+    background: linear-gradient(165deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
 }
 
-.project-image-2 {
-    background: linear-gradient(135deg, #87CEEB 0%, #E0FFFF 100%);
+.journey-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
 }
 
-.project-image-3 {
-    background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+.journey-card h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+}
+
+.journey-card p {
+    color: var(--text-secondary);
 }
 
 /* Contact Section */
@@ -723,6 +746,10 @@ body.dark-theme .tag {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-emoji {
+        font-size: 4rem;
     }
 
     .project-links {
