@@ -1,0 +1,86 @@
+{
+  "portfolio": {
+    "personalInfo": {
+      "nombre": "Julieth Andrea Cubides Herreño",
+      "edad": 21,
+      "carrera": "Ingeniería de Sistemas",
+      "semestre": 7,
+      "email": "tu-email@ejemplo.com",
+      "descripcion": "Estudiante de Ingeniería de Sistemas • Desarrolladora • Diseñadora • Lectora",
+      "resumen": "Apasionada por la tecnología y el desarrollo web. Actualmente en el 7º semestre de Ingeniería de Sistemas, explorando nuevas formas de crear experiencias digitales memorables."
+    },
+    "tema": {
+      "colorPrincipal": "#6c5ce7",
+      "colorClaro": "#a29bfe",
+      "colorOscuro": "#5f3dc4",
+      "fuente": "Segoe UI"
+    },
+    "redes": {
+      "linkedin": "https://linkedin.com/in/tu-usuario",
+      "github": "https://github.com/tu-usuario",
+      "twitter": "https://twitter.com/tu-usuario",
+      "instagram": "https://instagram.com/tu-usuario"
+    },
+    "habilidades": {
+      "frontend": ["HTML", "CSS", "JavaScript", "React"],
+      "backend": ["Python", "Java", "SQL"],
+      "diseño": ["UI/UX", "Figma", "Adobe Creative Suite"],
+      "herramientas": ["Git", "VS Code", "Photoshop"]
+    },
+    "proyectos": [
+      {
+        "id": 1,
+        "titulo": "Gestor de Tareas",
+        "descripcion": "Aplicación web para administrar tareas diarias con persistencia en localStorage.",
+        "emoji": "💻",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "enlace": "https://proyecto1.vercel.app",
+        "codigo": "https://github.com/usuario/proyecto1"
+      },
+      {
+        "id": 2,
+        "titulo": "Juego de Memoria",
+        "descripcion": "Juego interactivo de memoria con temporizador y niveles de dificultad.",
+        "emoji": "🎮",
+        "tags": ["JavaScript", "CSS Animation"],
+        "enlace": "https://proyecto2.vercel.app",
+        "codigo": "https://github.com/usuario/proyecto2"
+      },
+      {
+        "id": 3,
+        "titulo": "E-commerce",
+        "descripcion": "Tienda en línea responsiva con carrito de compras y sistema de filtros.",
+        "emoji": "🛍️",
+        "tags": ["React", "CSS", "API REST"],
+        "enlace": "https://proyecto3.vercel.app",
+        "codigo": "https://github.com/usuario/proyecto3"
+      },
+      {
+        "id": 4,
+        "titulo": "Clima en Tiempo Real",
+        "descripcion": "Aplicación que muestra el clima usando API de OpenWeather y geolocalización.",
+        "emoji": "🌐",
+        "tags": ["JavaScript", "API", "CSS Grid"],
+        "enlace": "https://proyecto4.vercel.app",
+        "codigo": "https://github.com/usuario/proyecto4"
+      }
+    ],
+    "contacto": {
+      "formulario_habilitado": true,
+      "servicio_email": "formspree",
+      "formspree_id": "tu_id_aqui",
+      "telefono": "+57 300 000 0000",
+      "ubicacion": "Colombia"
+    },
+    "seo": {
+      "titulo": "Julieth Andrea Cubides - Ingeniería de Sistemas",
+      "descripcion": "Portfolio profesional de Julieth Andrea Cubides, estudiante de Ingeniería de Sistemas en el 7º semestre.",
+      "keywords": ["Julieth Cubides", "Ingeniería de Sistemas", "Desarrolladora", "Portfolio", "Web Developer"]
+    },
+    "despliegue": {
+      "plataforma": "vercel",
+      "dominio": "julieth-portfolio.vercel.app",
+      "repositorio_github": "https://github.com/usuario/julieth-portfolio"
+    }
+  }
+}

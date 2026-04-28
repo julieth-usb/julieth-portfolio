@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleta de Colores - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .palettes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .palette {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .palette-header {
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .color-row {
+            display: flex;
+            height: 80px;
+        }
+
+        .color-box {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .color-box:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        .color-info {
+            padding: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .color-info p {
+            margin: 0.5rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .copy-hint {
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .instructions {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .instructions h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin: 0.5rem 0;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Paletas de Colores para tu Portfolio</h1>
+        
+        <div class="instructions">
+            <h2>📋 Cómo usar esta herramienta:</h2>
+            <ol>
+                <li>Explora las diferentes paletas de colores</li>
+                <li>Haz clic en un color para copiar su código hex</li>
+                <li>Actualiza los valores en <code>css/styles.css</code> en la sección <code>:root</code></li>
+                <li>Actualiza: <code>--accent-color</code>, <code>--accent-light</code> y <code>--accent-dark</code></li>
+                <li>Recarga tu navegador (F5) para ver los cambios</li>
+            </ol>
+        </div>
+
+        <div class="palettes-grid">
+            <!-- Paleta 1: Púrpura (Actual) -->
+            <div class="palette">
+                <div class="palette-header" style="background: #6c5ce7;">Púrpura</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #6c5ce7;" title="Click para copiar">#6c5ce7</div>
+                    <div class="color-box" style="background: #a29bfe;" title="Click para copiar">#a29bfe</div>
+                    <div class="color-box" style="background: #5f3dc4;" title="Click para copiar">#5f3dc4</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #6c5ce7</p>
+                    <p>Claro: #a29bfe</p>
+                    <p>Oscuro: #5f3dc4</p>
+                    <p class="copy-hint">💡 Haz clic en un color para copiar</p>
+                </div>
+            </div>
+
+            <!-- Paleta 2: Azul -->
+            <div class="palette">
+                <div class="palette-header" style="background: #0984e3;">Azul</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #0984e3;" title="Click para copiar">#0984e3</div>
+                    <div class="color-box" style="background: #74b9ff;" title="Click para copiar">#74b9ff</div>
+                    <div class="color-box" style="background: #2d3436;" title="Click para copiar">#2d3436</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #0984e3</p>
+                    <p>Claro: #74b9ff</p>
+                    <p>Oscuro: #2d3436</p>
+                    <p class="copy-hint">💡 Profesional y moderno</p>
+                </div>
+            </div>
+
+            <!-- Paleta 3: Verde -->
+            <div class="palette">
+                <div class="palette-header" style="background: #00b894;">Verde</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #00b894;" title="Click para copiar">#00b894</div>
+                    <div class="color-box" style="background: #55efc4;" title="Click para copiar">#55efc4</div>
+                    <div class="color-box" style="background: #006622;" title="Click para copiar">#006622</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #00b894</p>
+                    <p>Claro: #55efc4</p>
+                    <p>Oscuro: #006622</p>
+                    <p class="copy-hint">💡 Fresco y amigable</p>
+                </div>
+            </div>
+
+            <!-- Paleta 4: Rojo -->
+            <div class="palette">
+                <div class="palette-header" style="background: #d63031;">Rojo</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #d63031;" title="Click para copiar">#d63031</div>
+                    <div class="color-box" style="background: #fab1a0;" title="Click para copiar">#fab1a0</div>
+                    <div class="color-box" style="background: #a00d0d;" title="Click para copiar">#a00d0d</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #d63031</p>
+                    <p>Claro: #fab1a0</p>
+                    <p>Oscuro: #a00d0d</p>
+                    <p class="copy-hint">💡 Energético y atrevido</p>
+                </div>
+            </div>
+
+            <!-- Paleta 5: Naranja -->
+            <div class="palette">
+                <div class="palette-header" style="background: #fd79a8;">Rosa/Coral</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #fd79a8;" title="Click para copiar">#fd79a8</div>
+                    <div class="color-box" style="background: #fdcb6e;" title="Click para copiar">#fdcb6e</div>
+                    <div class="color-box" style="background: #e17055;" title="Click para copiar">#e17055</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #fd79a8</p>
+                    <p>Claro: #fdcb6e</p>
+                    <p>Oscuro: #e17055</p>
+                    <p class="copy-hint">💡 Cálido y acogedor</p>
+                </div>
+            </div>
+
+            <!-- Paleta 6: Turquesa -->
+            <div class="palette">
+                <div class="palette-header" style="background: #1abc9c;">Turquesa</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #1abc9c;" title="Click para copiar">#1abc9c</div>
+                    <div class="color-box" style="background: #48dbfb;" title="Click para copiar">#48dbfb</div>
+                    <div class="color-box" style="background: #117a65;" title="Click para copiar">#117a65</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #1abc9c</p>
+                    <p>Claro: #48dbfb</p>
+                    <p>Oscuro: #117a65</p>
+                    <p class="copy-hint">💡 Tranquilo y profesional</p>
+                </div>
+            </div>
+
+            <!-- Paleta 7: Índigo -->
+            <div class="palette">
+                <div class="palette-header" style="background: #4c63d2;">Índigo</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #4c63d2;" title="Click para copiar">#4c63d2</div>
+                    <div class="color-box" style="background: #a8b8ff;" title="Click para copiar">#a8b8ff</div>
+                    <div class="color-box" style="background: #2c3e50;" title="Click para copiar">#2c3e50</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #4c63d2</p>
+                    <p>Claro: #a8b8ff</p>
+                    <p>Oscuro: #2c3e50</p>
+                    <p class="copy-hint">💡 Sofisticado y creativo</p>
+                </div>
+            </div>
+
+            <!-- Paleta 8: Negro y Dorado -->
+            <div class="palette">
+                <div class="palette-header" style="background: #2c3e50;">Minimalista</div>
+                <div class="color-row">
+                    <div class="color-box" style="background: #2c3e50;" title="Click para copiar">#2c3e50</div>
+                    <div class="color-box" style="background: #ecf0f1;" title="Click para copiar">#ecf0f1</div>
+                    <div class="color-box" style="background: #f39c12;" title="Click para copiar">#f39c12</div>
+                </div>
+                <div class="color-info">
+                    <p>Principal: #2c3e50</p>
+                    <p>Claro: #ecf0f1</p>
+                    <p>Oscuro: #f39c12</p>
+                    <p class="copy-hint">💡 Elegante y limpio</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h2>📝 Pasos para cambiar el color:</h2>
+            <ol>
+                <li>Abre tu archivo <code>css/styles.css</code></li>
+                <li>Busca la sección <code>:root {</code> (línea 2-9)</li>
+                <li>Reemplaza estos valores:
+                    <ul style="margin: 0.5rem 0 0 1.5rem;">
+                        <li><code>--accent-color: #TU_COLOR_PRINCIPAL;</code></li>
+                        <li><code>--accent-light: #TU_COLOR_CLARO;</code></li>
+                        <li><code>--accent-dark: #TU_COLOR_OSCURO;</code></li>
+                    </ul>
+                </li>
+                <li>Guarda el archivo (Ctrl + S)</li>
+                <li>Recarga tu navegador (F5)</li>
+                <li>¡Listo! Tu portfolio ahora tiene nuevos colores</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>💜 Hecho con cuidado para tu portfolio | Última actualización: 2024</p>
+        </div>
+    </div>
+
+    <script>
+        // Copiar color al hacer clic
+        document.querySelectorAll('.color-box').forEach(box => {
+            box.addEventListener('click', function() {
+                const color = this.textContent.trim();
+                navigator.clipboard.writeText(color).then(() => {
+                    alert(`✅ Copiado: ${color}\n\nPega este valor en tu CSS`);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

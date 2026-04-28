@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julieth Andrea Cubides - Ingeniería de Sistemas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Julieth</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-section="home">Inicio</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Acerca de</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contáctame</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" title="Cambiar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hola, soy <span class="highlight">Julieth Andrea</span></h1>
+                    <p class="hero-subtitle">Estudiante de Ingeniería de Sistemas • Desarrolladora • Diseñadora • Lectora</p>
+                    <p class="hero-description">
+                        Apasionada por la tecnología y el desarrollo web. Actualmente en el 7º semestre de Ingeniería de Sistemas, 
+                        explorando nuevas formas de crear experiencias digitales memorables.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Mis Proyectos</a>
+                        <a href="#contact" class="btn btn-secondary">Contáctame</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="assets/profile.jpeg" alt="Julieth Andrea Cubides" class="profile-photo">
+                        <p class="profile-name">Julieth Andrea Cubides Herreño</p>
+                        <p class="profile-role">Ingeniería de Sistemas · 7º semestre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">Acerca de Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Mi nombre es <strong>Julieth Andrea Cubides Herreño</strong>, tengo 21 años y soy estudiante 
+                        de Ingeniería de Sistemas. Actualmente me encuentro en el 7º semestre de mi carrera, 
+                        donde he desarrollado una pasión especial por la programación y el desarrollo web.
+                    </p>
+                    <p>
+                        Me encanta resolver problemas a través del código, crear interfaces intuitivas y visualmente 
+                        atractivas. Además de la programación, disfruto del diseño gráfico, la lectura y constantemente 
+                        estoy aprendiendo nuevas tecnologías.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Habilidades</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h4>Frontend</h4>
+                            <p>HTML • CSS • JavaScript • React</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Backend</h4>
+                            <p>Python • Java • SQL</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Diseño</h4>
+                            <p>UI/UX • Figma • Adobe Creative Suite</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Herramientas</h4>
+                            <p>Git • VS Code • Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="project-category-title">Juegos desarrollados</div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🪢</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Juego del Ahorcado</h3>
+                        <p>Juego interactivo para adivinar palabras con intentos limitados y diseño responsivo.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Ver Proyecto</a>
+                            <a href="#" class="link-btn">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">❌</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Triki (Tres en línea)</h3>
+                        <p>Juego clásico de estrategia para dos jugadores con turnos, validación y reinicio.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Lógica de juego</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Ver Proyecto</a>
+                            <a href="#" class="link-btn">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-category-title">Proyectos académicos</div>
+            <div class="projects-grid projects-grid-secondary">
+                <div class="project-card project-card-wide">
+                    <div class="project-image">
+                        <div class="project-placeholder">🐾</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Huellas Seguras</h3>
+                        <p>Plataforma web en Java para reportar abandono o maltrato animal en Cúcuta y facilitar adopciones con información segura y confiable.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Web</span>
+                            <span class="tag">Seguridad</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Ver Proyecto</a>
+                            <a href="#" class="link-btn">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-wide">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Inclúyeme</h3>
+                        <p>Aplicación móvil de apoyo pedagógico para docentes que atienden estudiantes con discapacidad y fortalecen la educación inclusiva.</p>
+                        <div class="project-tags">
+                            <span class="tag">App móvil</span>
+                            <span class="tag">Educación</span>
+                            <span class="tag">Inclusión</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Ver Proyecto</a>
+                            <a href="#" class="link-btn">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card project-card-wide">
+                    <div class="project-image">
+                        <div class="project-placeholder">🗂️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de gestión de actividades</h3>
+                        <p>Sistema en PHP para la administración y seguimiento de actividades educativas organizadas por la Universidad Simón Bolívar de Cúcuta.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Gestión</span>
+                            <span class="tag">Educación</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="link-btn">Ver Proyecto</a>
+                            <a href="#" class="link-btn">Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Tu correo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="6" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Otros Medios de Contacto</h3>
+                    <div class="contact-links">
+                        <a href="tel:+573213860931" class="contact-link">
+                            <span class="icon">📞</span>
+                            <span>3213860931</span>
+                        </a>
+                        <a href="mailto:j_cubides@unisimon.edu.com" class="contact-link">
+                            <span class="icon">📧</span>
+                            <span>j_cubides@unisimon.edu.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="icon">💼</span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <span class="icon">📷</span>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Julieth Andrea Cubides. Todos los derechos reservados.</p>
+            <p>Hecho con 💜 y JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

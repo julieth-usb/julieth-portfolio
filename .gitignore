@@ -1,0 +1,29 @@
+# Ignorar archivos locales
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.env
+.env.local
+
+# Carpetas del sistema
+node_modules/
+.git/
+__pycache__/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Archivos temporales
+temp/
+tmp/
+cache/
